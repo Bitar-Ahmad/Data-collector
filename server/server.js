@@ -9,7 +9,7 @@ var io = require('socket.io')(http);
 var port = process.env.PORT;
 
 
-var connection = mongoose.createConnection('mongodb://localhost:27017/Records');
+var connection = mongoose.createConnection(MONGODB_URL);
 autoIncrement.initialize(connection);
 
 
