@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* ===================================*/
+/* ======== Reusable component =======*/
+/* ===================================*/
+
+.row {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.box {
+    padding:1%;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ===================================*/
+/* ========      Headings      =======*/
+/* ===================================*/
+
+
+h1 ,h2 ,h3 ,h4 {
+/*    text-transform: uppercase;*/
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+h1 {
+    margin-top:0;
+    margin-bottom: 20px;
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 4px;
+
+}
+
+h2 {
+    font-size:180%;
+    text-align: center;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size:110%;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e74c3c;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+h4 {
+    display: inline;
+    margin-right: 10px;
+}
+
+input {
+  float:center;
+}
+
+
+/* ===================================*/
+/* ========     paragraphs    ========*/
+/* ===================================*/
+
+.long-copy {
+    line-height: 145%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ===================================*/
+/* ========      Buttons      ========*/
+/* ===================================*/
+
+.buttonSubmit {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 30px;
+  border-radius: 200px;
+  margin-right: 20px;
+  transition: background-color 0.3s , color 0.3s;
+  background-color: #e74c3c;
+  border: 1px solid #e74c3c;
+  color: #fff;
+  cursor:pointer;
+  margin:40px 20px 40px 20px
+}
+
+.buttonSubmit:hover {
+    background-color: #e3301e;
+    border: 1px solid #e3301e;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 30px;
+    border-radius: 200px;
+    margin-right: 20px;
+    transition: background-color 0.3s , color 0.3s;
+}
+
+/*
+.btn:hover,
+.btn:active {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 200px;
+    margin-right: 20px;
+}
+*/
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #e3301e;
+    border: 1px solid #e3301e;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #e3301e;
+    border: 1px solid #e3301e;
+    color:#fff;
+}
+
+
+
+/* ===================================*/
+/* ========      Header       ========*/
+/* ===================================*/
+
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) , url(img/37b0124ba5e6f78702b22b2204953ae0.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.main-header {
+    width: 1140px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+nav {
+    padding:30px 0;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    word-spacing: 4px;
+    font-weight: 300;
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e74c3c;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top:20px;
+    display: hidden;
+}
+
+
+/* ===================================*/
+/* =======     Data.acc       ========*/
+/* ===================================*/
+
+
+.data-acc {
+    text-align: center;
+}
+
+
+/* ===================================*/
+/* ========      btns-data       ========*/
+/* ===================================*/
+
+
+.btns-data {
+  text-align: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/Grid.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <title>RouteIN</title>
+    </head>
+
+    <body>
+        <header>
+            <nav    >
+                <div class="row">
+                    <!-- <img class="logo" src="css/img/logo-white.png" alt="Omni Logo"/> -->
+                    <ul class="main-nav">
+                        <li><a class="aio" href="#">How it works</a></li>
+                        <li><a class="aio" href="#">Our Team</a></li>
+                        <li><a class="aio" href="#">Our App</a></li>
+                        <li><a class="aio" href="#">Sign in</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="main-header">
+                <h1>Welcome to RouteIN app.<br/></h1>
+                <a class="btn btn-full" href="#">Developer</a>
+                <a class="btn btn-ghost" href="#">Records</a>
+            </div>
+        </header>
+
+
+        <section class="section-data">
+            <div class ="row">
+                <h2>Welcome to the Mercedes-Benz international website.</h2>
+                <p class="long-copy">Exclusive reports and current films: experience a broad range of topics from the fascinating world of Mercedes-Benz. To find out about offers in your location, please go to the local Mercedes-Benz website.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                    <div class="data-acc">
+                      <h3>Accelerometer</h3>
+                        <h4>acc-X:</h4>
+                        <input type="text" readonly id="x" value="" /><br><br>
+                        <h4>acc-Y:</h4>
+                        <input type="text" readonly id="y" value="" /><br><br>
+                        <h4>acc-Z:</h4>
+                        <input type="text" readonly id="z" value="" /><br><br>
+                    </div>
+                </div>
+                <div class="col span-1-of-2 box">
+                    <div class="data-acc">
+                      <h3>GyroScope</h3>
+                        <h4>Alpha&nbsp;&nbsp;&nbsp;:</h4>
+                        <input type="text" readonly id="xx" value="" /><br><br>
+                        <h4>Gamma:</h4>
+                        <input type="text" readonly id="yy" value="" /><br><br>
+                        <h4>Beta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h4>
+                        <input type="text" readonly id="zz" value="" /><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="btns-data">
+              <button class="buttonSubmit" onclick="sendData()">Send</button>
+              <button class="buttonSubmit" onclick="breakSending()">Stop</button>
+              <button class="buttonSubmit" onclick="toggleQuality()" id="quality">True</button>
+            </div>
+        </section>
+    </body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/app.js"></script>
+</html>

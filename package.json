@@ -1,0 +1,22 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "env-cmd ./config/dev.env nodemon server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1",
+    "mongoose-auto-increment": "^5.0.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.18.11"
+  },
+  "description": ""
+}
